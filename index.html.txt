@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS Informática - Seu PC em boas mãos!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A111F;
+            color: #ffffff;
+        }
+        .neon-text {
+            color: #00A8FF;
+            text-shadow: 0 0 10px rgba(0, 168, 255, 0.5);
+        }
+        .neon-border {
+            border-color: #1A2A44;
+            transition: all 0.3s ease;
+        }
+        .neon-border:hover {
+            border-color: #00A8FF;
+            box-shadow: 0 0 15px rgba(0, 168, 255, 0.3);
+            transform: translateY(-5px);
+        }
+        .bg-neon {
+            background-color: #00A8FF;
+        }
+        .bg-neon:hover {
+            background-color: #008ecc;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="w-full py-6 px-4 md:px-12 flex justify-between items-center border-b border-gray-800 sticky top-0 bg-[#0A111F] bg-opacity-95 backdrop-blur-md z-50">
+        <div class="text-2xl font-black tracking-wider">
+            WS <span class="text-gray-400 font-normal">INFORMATICA</span>
+        </div>
+        <nav class="hidden md:flex gap-8 text-sm font-medium text-gray-300">
+            <a href="#servicos" class="hover:text-blue-400 transition">Serviços</a>
+            <a href="#diferenciais" class="hover:text-blue-400 transition">Por que me escolher?</a>
+            <a href="#contato" class="hover:text-blue-400 transition">Contato</a>
+        </nav>
+        <a href="https://wa.me/5555981238107" target="_blank" class="bg-neon text-white px-6 py-2 rounded-full font-bold text-sm transition shadow-lg shadow-blue-500/30">
+            <i class="fab fa-whatsapp mr-2"></i> Fale Conosco
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="px-4 md:px-12 py-16 md:py-24 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto gap-12">
+        <div class="md:w-1/2 space-y-6 text-center md:text-left">
+            <h2 class="text-blue-400 font-bold text-xl tracking-widest uppercase">Tecnologia • Suporte • Soluções</h2>
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+                Seu PC em <br> <span class="neon-text">boas mãos!</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-lg mx-auto md:mx-0">
+                Faço qualquer tipo de trabalho de TI. Automação, criação de sites, suporte técnico e muito mais para facilitar a sua vida.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="https://wa.me/5555981238107" target="_blank" class="bg-neon text-white px-8 py-4 rounded-xl font-bold text-lg transition shadow-lg shadow-blue-500/30 flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-3 text-2xl"></i> Solicitar Orçamento
+                </a>
+                <a href="#servicos" class="border border-gray-600 hover:border-blue-400 text-white px-8 py-4 rounded-xl font-bold text-lg transition flex items-center justify-center">
+                    Ver Serviços
+                </a>
+            </div>
+        </div>
+        
+        <div class="md:w-1/2 flex justify-center">
+            <!-- Substitua a URL abaixo pela imagem real do seu mascote -->
+            <img src="https://placehold.co/600x500/0A111F/00A8FF?text=Seu+Mascote+Aqui" 
+                 alt="Mascote WS Informática" 
+                 class="rounded-2xl shadow-2xl shadow-blue-500/20 max-w-full h-auto border border-gray-800">
+            <!-- Exemplo de como ficaria com uma imagem real:
+            <img src="caminho-para-sua-imagem.png" alt="Mascote WS Informática" class="rounded-2xl shadow-2xl shadow-blue-500/20 max-w-full h-auto"> 
+            -->
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="px-4 md:px-12 py-20 bg-[#0D1627]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Nossos Serviços</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Soluções completas em TI para pessoas físicas e empresas. Da manutenção ao desenvolvimento de sistemas complexos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Card 1 -->
+                <div class="bg-[#0A111F] p-8 rounded-2xl border neon-border">
+                    <div class="text-blue-400 text-4xl mb-4"><i class="fas fa-robot"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Automação e Inteligência Artificial</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Automatize processos, reduza tarefas e aumente sua produtividade com IA.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#0A111F] p-8 rounded-2xl border neon-border">
+                    <div class="text-blue-400 text-4xl mb-4"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Soluções Acadêmicas e Universitárias</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Trabalhos, projetos, pesquisas, auxílio em atividades acadêmicas e suporte universitário.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#0A111F] p-8 rounded-2xl border neon-border">
+                    <div class="text-blue-400 text-4xl mb-4"><i class="fas fa-laptop"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Atendimento Remoto e Suporte Online</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Resolva seus problemas sem sair de casa. Suporte rápido, seguro e eficiente.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-[#0A111F] p-8 rounded-2xl border neon-border">
+                    <div class="text-blue-400 text-4xl mb-4"><i class="fas fa-globe"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Criação de Sites Profissionais</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Sites modernos, responsivos e personalizados para o seu negócio ou projeto.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-[#0A111F] p-8 rounded-2xl border neon-border">
+                    <div class="text-blue-400 text-4xl mb-4"><i class="fas fa-bolt"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Desenvolvimento de Sistemas e Programas</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Soluções sob medida para sua necessidade. Sistemas, apps e integrações.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-[#0A111F] p-8 rounded-2xl border neon-border">
+                    <div class="text-blue-400 text-4xl mb-4"><i class="fas fa-tools"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Manutenção e Suporte Técnico</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Seu equipamento sempre funcionando. Manutenção preventiva e corretiva para PC e notebooks.</p>
+                </div>
+
+                <!-- Card 7 (Full width or just a wider card) -->
+                <div class="bg-[#0A111F] p-8 rounded-2xl border neon-border md:col-span-2 lg:col-span-3 flex flex-col md:flex-row items-center gap-6">
+                    <div class="text-blue-400 text-5xl"><i class="fas fa-shield-alt"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Segurança Digital e Proteção de Dados</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Proteja suas informações, evite riscos e mantenha seus dados sempre seguros.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me (Diferenciais) -->
+    <section id="diferenciais" class="px-4 md:px-12 py-20 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-6">
+                <div class="text-blue-400 text-5xl mb-4"><i class="fas fa-check-circle"></i></div>
+                <h4 class="text-xl font-bold mb-2">Agilidade no Atendimento</h4>
+                <p class="text-gray-400 text-sm">Respostas rápidas e soluções eficientes para não travar o seu dia.</p>
+            </div>
+            <div class="p-6">
+                <div class="text-blue-400 text-5xl mb-4"><i class="fas fa-bullseye"></i></div>
+                <h4 class="text-xl font-bold mb-2">Soluções Personalizadas</h4>
+                <p class="text-gray-400 text-sm">Cada projeto é único. Desenvolvemos a solução ideal para a sua necessidade.</p>
+            </div>
+            <div class="p-6">
+                <div class="text-blue-400 text-5xl mb-4"><i class="fas fa-handshake"></i></div>
+                <h4 class="text-xl font-bold mb-2">Confiança em Cada Serviço</h4>
+                <p class="text-gray-400 text-sm">Transparência, segurança e compromisso com a qualidade do seu equipamento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contato" class="px-4 md:px-12 py-20 bg-gradient-to-b from-[#0A111F] to-[#0D1627]">
+        <div class="max-w-4xl mx-auto text-center bg-[#0A111F] border border-blue-900 rounded-3xl p-10 md:p-16 shadow-2xl shadow-blue-900/20">
+            <h2 class="text-4xl font-bold mb-6">Pronto para resolver seu problema de TI?</h2>
+            <p class="text-gray-400 text-lg mb-10">Entre em contato agora mesmo e receba um atendimento rápido e personalizado.</p>
+            
+            <a href="https://wa.me/5555981238107" target="_blank" class="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#1ebe5d] text-white px-10 py-5 rounded-2xl font-bold text-2xl transition shadow-lg shadow-green-500/30">
+                <i class="fab fa-whatsapp mr-4 text-3xl"></i>
+                (55) 98123 8107
+            </a>
+            
+            <p class="mt-6 text-sm text-gray-500">Atendimento remoto para todo o Brasil e suporte local.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-gray-800 text-gray-500 text-sm">
+        <p>&copy; 2023 WS Informática. Todos os direitos reservados.</p>
+        <p class="mt-2">Tecnologia • Suporte • Soluções</p>
+    </footer>
+
+</body>
+</html>
